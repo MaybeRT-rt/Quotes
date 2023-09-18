@@ -9,7 +9,7 @@ import UIKit
 
 extension UIColor {
     static var tabBarAccent: UIColor {
-        return UIColor.orange
+        return UIColor(named: "Color 1") ?? UIColor.orange
     }
     
     static var tabBarWhite: UIColor {
@@ -17,6 +17,6 @@ extension UIColor {
     }
     
     static var tabBarLight: UIColor {
-        return UIColor.brown
+        return UIColor(named: "Color 2") ?? UIColor.brown
     }
 }
