@@ -57,16 +57,6 @@ class QuotesController {
         }
     }
     
-//    func loadCategories(completion: @escaping (Result<[String], Error>) -> Void) async {
-//        do {
-//            let categories = try await NetworkManager.fetchCategories()
-//            self.categories = categories
-//            completion(.success(categories))
-//        } catch {
-//            completion(.failure(error))
-//        }
-//    }
-//    
     private func determineCategory(for quoteText: String) -> String? {
         let categories = [
             "animal", "career", "celebrity", "dev", "explicit", "fashion", "food",
