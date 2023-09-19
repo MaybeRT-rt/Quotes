@@ -14,7 +14,7 @@
 		4AC6CB482AB714E5003D0333 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6CB472AB714E5003D0333 /* MainTabBarController.swift */; };
 		4AC6CB522AB72A92003D0333 /* RandomQuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6CB512AB72A92003D0333 /* RandomQuoteController.swift */; };
 		4AC6CB542AB72AA4003D0333 /* RandomQuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6CB532AB72AA4003D0333 /* RandomQuoteView.swift */; };
-		4AC6CB592AB72BCA003D0333 /* ListQutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6CB582AB72BCA003D0333 /* ListQutesView.swift */; };
+		4AC6CB592AB72BCA003D0333 /* ListQuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6CB582AB72BCA003D0333 /* ListQuotesView.swift */; };
 		4AC6CB5B2AB72BD6003D0333 /* ListQutesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6CB5A2AB72BD6003D0333 /* ListQutesController.swift */; };
 		4AC6CB5F2AB72C0E003D0333 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6CB5E2AB72C0E003D0333 /* CategoriesView.swift */; };
 		4AC6CB612AB72C19003D0333 /* CategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6CB602AB72C19003D0333 /* CategoriesController.swift */; };
@@ -25,10 +25,11 @@
 		4AC6CB712AB76C4A003D0333 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6CB702AB76C4A003D0333 /* NetworkManager.swift */; };
 		4AC6CB742AB8CDC7003D0333 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 4AC6CB732AB8CDC7003D0333 /* Realm */; };
 		4AC6CB762AB8CDC7003D0333 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4AC6CB752AB8CDC7003D0333 /* RealmSwift */; };
+		4AC6CB792AB9090D003D0333 /* QuotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6CB782AB9090D003D0333 /* QuotesCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4AC6CB302AB7142F003D0333 /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Quotes.app; path = "/Users/maybert/Documents/coding/Quotes/build/Debug-iphoneos/Quotes.app"; sourceTree = "<absolute>"; };
+		4AA514222AB9DE3A0067FD61 /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC6CB332AB7142F003D0333 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AC6CB352AB7142F003D0333 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4AC6CB3C2AB71430003D0333 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,7 +38,7 @@
 		4AC6CB472AB714E5003D0333 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		4AC6CB512AB72A92003D0333 /* RandomQuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteController.swift; sourceTree = "<group>"; };
 		4AC6CB532AB72AA4003D0333 /* RandomQuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteView.swift; sourceTree = "<group>"; };
-		4AC6CB582AB72BCA003D0333 /* ListQutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListQutesView.swift; sourceTree = "<group>"; };
+		4AC6CB582AB72BCA003D0333 /* ListQuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListQuotesView.swift; sourceTree = "<group>"; };
 		4AC6CB5A2AB72BD6003D0333 /* ListQutesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListQutesController.swift; sourceTree = "<group>"; };
 		4AC6CB5E2AB72C0E003D0333 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		4AC6CB602AB72C19003D0333 /* CategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesController.swift; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		4AC6CB6B2AB76213003D0333 /* QuotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesController.swift; sourceTree = "<group>"; };
 		4AC6CB6D2AB76A8A003D0333 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		4AC6CB702AB76C4A003D0333 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4AC6CB782AB9090D003D0333 /* QuotesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				4AC6CB322AB7142F003D0333 /* Quotes */,
+				4AA514222AB9DE3A0067FD61 /* Quotes.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,8 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				4AC6CB532AB72AA4003D0333 /* RandomQuoteView.swift */,
-				4AC6CB582AB72BCA003D0333 /* ListQutesView.swift */,
+				4AC6CB582AB72BCA003D0333 /* ListQuotesView.swift */,
 				4AC6CB5E2AB72C0E003D0333 /* CategoriesView.swift */,
+				4AC6CB772AB908F4003D0333 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +168,14 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		4AC6CB772AB908F4003D0333 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4AC6CB782AB9090D003D0333 /* QuotesCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,7 +197,7 @@
 				4AC6CB752AB8CDC7003D0333 /* RealmSwift */,
 			);
 			productName = Quotes;
-			productReference = 4AC6CB302AB7142F003D0333 /* Quotes.app */;
+			productReference = 4AA514222AB9DE3A0067FD61 /* Quotes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -246,6 +258,7 @@
 				4AC6CB612AB72C19003D0333 /* CategoriesController.swift in Sources */,
 				4AC6CB542AB72AA4003D0333 /* RandomQuoteView.swift in Sources */,
 				4AC6CB482AB714E5003D0333 /* MainTabBarController.swift in Sources */,
+				4AC6CB792AB9090D003D0333 /* QuotesCell.swift in Sources */,
 				4AC6CB642AB7351A003D0333 /* UIColorExtension.swift in Sources */,
 				4AC6CB672AB7538E003D0333 /* Quotes.swift in Sources */,
 				4AC6CB522AB72A92003D0333 /* RandomQuoteController.swift in Sources */,
@@ -254,7 +267,7 @@
 				4AC6CB712AB76C4A003D0333 /* NetworkManager.swift in Sources */,
 				4AC6CB5B2AB72BD6003D0333 /* ListQutesController.swift in Sources */,
 				4AC6CB6C2AB76213003D0333 /* QuotesController.swift in Sources */,
-				4AC6CB592AB72BCA003D0333 /* ListQutesView.swift in Sources */,
+				4AC6CB592AB72BCA003D0333 /* ListQuotesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

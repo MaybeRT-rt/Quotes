@@ -50,7 +50,7 @@ class QuotesController {
     func loadAllQuotes(completion: @escaping (Result<Results<Quotes>, Error>) -> Void) async {
         do {
             let realm = try await Realm()
-            let quotes = realm.objects(Quotes.self).sorted(byKeyPath: "dateAdded", ascending: false)
+            let quotes = realm.objects(Quotes.self).sorted(byKeyPath: "dataAdded", ascending: false)
             completion(.success(quotes))
         } catch {
             completion(.failure(error))
