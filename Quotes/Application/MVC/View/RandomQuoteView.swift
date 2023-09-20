@@ -14,6 +14,7 @@ class RandomQuoteView: UIView {
         let quoteLabel = UILabel()
         quoteLabel.translatesAutoresizingMaskIntoConstraints = false
         quoteLabel.textAlignment = .center
+        quoteLabel.font = UIFont.systemFont(ofSize: 20.0)
         quoteLabel.numberOfLines = 0
         return quoteLabel
     }()
@@ -22,7 +23,7 @@ class RandomQuoteView: UIView {
         let loadButton = UIButton()
         loadButton.translatesAutoresizingMaskIntoConstraints = false
         loadButton.setTitle("Загрузить цитату", for: .normal)
-        loadButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18.0)
+        loadButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20.0)
         loadButton.setTitleColor(UIColor(named: "Color 2"), for: .normal)
         loadButton.backgroundColor = UIColor(named: "Color 1")
         

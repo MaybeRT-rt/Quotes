@@ -13,6 +13,7 @@ class QuotesCell: UITableViewCell {
     let quotesLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 20.0)
         label.numberOfLines = 0
         return label
     }()

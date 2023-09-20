@@ -17,12 +17,13 @@ class ListQuotesController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        
         navigationItem.title = "List of all quotes"
-        quotesListView.tableView.estimatedRowHeight = 200 // Установите оценочную высоту
-        quotesListView.tableView.rowHeight = UITableView.automaticDimension // Позволяет ячейкам изменять высоту автоматически
         
         setupTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         loadQuotes()
     }
     
@@ -30,6 +31,9 @@ class ListQuotesController: UIViewController {
         
         quotesListView.tableView.delegate = self
         quotesListView.tableView.dataSource = self
+        quotesListView.tableView.estimatedRowHeight = 200
+        quotesListView.tableView.allowsSelection = false
+        quotesListView.tableView.rowHeight = UITableView.automaticDimension
         quotesListView.tableView.register(QuotesCell.self, forCellReuseIdentifier: "QuoteCell")
         
         view.addSubview(quotesListView.tableView)
@@ -51,24 +55,6 @@ class ListQuotesController: UIViewController {
             print("Error loading quotes: \(error)")
         }
     }
-
 }
 
-
-extension ListQuotesController: UITableViewDelegate, UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return quotes?.count ?? 0
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "QuoteCell", for: indexPath) as! QuotesCell
-        
-        let quote = quotes?[indexPath.row]
-        cell.quotesLabel.text = quote?.text ?? ""
-        cell.detailTextLabel?.text = quote?.dataAdded.description
-        
-        return cell
-    }
-}
 
