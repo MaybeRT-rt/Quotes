@@ -12,3 +12,4 @@ class Category: Object {
     @Persisted(primaryKey: true) var name: String = ""
     let quotes = List<Quotes>()
 }
+

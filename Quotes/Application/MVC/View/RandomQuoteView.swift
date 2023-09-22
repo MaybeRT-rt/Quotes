@@ -14,7 +14,8 @@ class RandomQuoteView: UIView {
         let quoteLabel = UILabel()
         quoteLabel.translatesAutoresizingMaskIntoConstraints = false
         quoteLabel.textAlignment = .center
-        quoteLabel.font = UIFont.systemFont(ofSize: 20.0)
+        quoteLabel.textColor = UIColor(named: "Color 2")
+        quoteLabel.font = UIFont.boldSystemFont(ofSize: 22.0)
         quoteLabel.numberOfLines = 0
         return quoteLabel
     }()
@@ -55,7 +56,7 @@ class RandomQuoteView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupUI() {
+    private func setupUI() {
         addSubview(quoteLabel)
         addSubview(quoteLoadButton)
         addSubview(imageView)

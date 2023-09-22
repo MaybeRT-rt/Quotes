@@ -12,6 +12,8 @@ class ListQuotesView: UIView {
     
     var tableView: UITableView = {
         let tb = UITableView()
+        tb.backgroundColor = .white
+        tb.clipsToBounds = true
         tb.translatesAutoresizingMaskIntoConstraints = false
         return tb
     }()
@@ -26,14 +28,14 @@ class ListQuotesView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setupUI() {
+    private func setupUI() {
         addSubview(tableView)
         
         NSLayoutConstraint.activate([
             tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: trailingAnchor),
             tableView.topAnchor.constraint(equalTo: topAnchor),
-            tableView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            tableView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor)
             
         ])
     }

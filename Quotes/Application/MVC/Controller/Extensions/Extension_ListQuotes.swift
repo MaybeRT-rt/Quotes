@@ -25,13 +25,16 @@ extension ListQuotesController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "QuoteCell", for: indexPath) as! QuotesCell
         
-        cell.layer.cornerRadius = 10
-        cell.layer.borderWidth = 0.5
-        cell.layer.borderColor =  UIColor(named: "Color 2")?.cgColor //
-        
         let quote = quotes?[indexPath.row]
         cell.quotesLabel.text = quote?.text ?? ""
-        cell.detailTextLabel?.text = quote?.dataAdded.description
+        
+        if let date = quote?.dataAdded {
+            cell.quotesDataLabel.text = DateFormat.formatDate(date)
+        } else {
+            cell.quotesDataLabel.text = ""
+        }
+        
+        cell.quotesCategotyLabel.text = quote?.category//.category?.capitalized
         
         return cell
     }

@@ -24,7 +24,7 @@ class RandomQuoteController: UIViewController {
         randomQuoteView.frame = view.bounds
     }
     
-    func setupUI() {
+    private func setupUI() {
         view.addSubview(randomQuoteView)
         randomQuoteView.quoteLoadButton.addTarget(self, action: #selector(loadRandomQuote), for: .touchUpInside)
     }

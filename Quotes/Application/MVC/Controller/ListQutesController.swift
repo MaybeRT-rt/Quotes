@@ -17,9 +17,9 @@ class ListQuotesController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        navigationItem.title = "List of all quotes"
-        
+        setupNavigationItem()
         setupTableView()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -27,12 +27,25 @@ class ListQuotesController: UIViewController {
         loadQuotes()
     }
     
-    func setupTableView() {
+    private func setupNavigationItem() {
+        if let navigationController = navigationController {
+            let navigationBarAppearance = UINavigationBarAppearance()
+            navigationBarAppearance.titleTextAttributes = [.foregroundColor: UIColor(named: "Color 2") as Any]
+            navigationController.navigationBar.standardAppearance = navigationBarAppearance
+            navigationController.navigationBar.scrollEdgeAppearance = navigationBarAppearance
+        }
+        
+        navigationItem.title = "List of all quotes"
+    }
+    
+    private func setupTableView() {
         
         quotesListView.tableView.delegate = self
         quotesListView.tableView.dataSource = self
+        
         quotesListView.tableView.estimatedRowHeight = 200
         quotesListView.tableView.allowsSelection = false
+        
         quotesListView.tableView.rowHeight = UITableView.automaticDimension
         quotesListView.tableView.register(QuotesCell.self, forCellReuseIdentifier: "QuoteCell")
         

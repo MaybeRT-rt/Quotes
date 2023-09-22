@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4AA675542ABAF4CC00FA71D3 /* FooterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA675532ABAF4CC00FA71D3 /* FooterViewCell.swift */; };
 		4AA675572ABAF68F00FA71D3 /* Extension_ListQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA675562ABAF68F00FA71D3 /* Extension_ListQuotes.swift */; };
+		4AA675592ABB001200FA71D3 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA675582ABB001200FA71D3 /* DateFormat.swift */; };
+		4AA6755C2ABCD9B500FA71D3 /* ExtensionCategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA6755B2ABCD9B500FA71D3 /* ExtensionCategoriesController.swift */; };
+		4AA6755E2ABCD9FA00FA71D3 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA6755D2ABCD9FA00FA71D3 /* CategoryCell.swift */; };
 		4AC6CB342AB7142F003D0333 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6CB332AB7142F003D0333 /* AppDelegate.swift */; };
 		4AC6CB362AB7142F003D0333 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC6CB352AB7142F003D0333 /* SceneDelegate.swift */; };
 		4AC6CB3D2AB71430003D0333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AC6CB3C2AB71430003D0333 /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 		4AA514222AB9DE3A0067FD61 /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA675532ABAF4CC00FA71D3 /* FooterViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterViewCell.swift; sourceTree = "<group>"; };
 		4AA675562ABAF68F00FA71D3 /* Extension_ListQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_ListQuotes.swift; sourceTree = "<group>"; };
+		4AA675582ABB001200FA71D3 /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		4AA6755B2ABCD9B500FA71D3 /* ExtensionCategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionCategoriesController.swift; sourceTree = "<group>"; };
+		4AA6755D2ABCD9FA00FA71D3 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		4AC6CB332AB7142F003D0333 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AC6CB352AB7142F003D0333 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4AC6CB3C2AB71430003D0333 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				4AA675562ABAF68F00FA71D3 /* Extension_ListQuotes.swift */,
+				4AA6755B2ABCD9B500FA71D3 /* ExtensionCategoriesController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -135,6 +142,7 @@
 			children = (
 				4AC6CB662AB7538E003D0333 /* Quotes.swift */,
 				4AC6CB6D2AB76A8A003D0333 /* Category.swift */,
+				4AA675582ABB001200FA71D3 /* DateFormat.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,6 +194,7 @@
 			children = (
 				4AC6CB782AB9090D003D0333 /* QuotesCell.swift */,
 				4AA675532ABAF4CC00FA71D3 /* FooterViewCell.swift */,
+				4AA6755D2ABCD9FA00FA71D3 /* CategoryCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -275,6 +284,7 @@
 				4AA675572ABAF68F00FA71D3 /* Extension_ListQuotes.swift in Sources */,
 				4AA675542ABAF4CC00FA71D3 /* FooterViewCell.swift in Sources */,
 				4AC6CB792AB9090D003D0333 /* QuotesCell.swift in Sources */,
+				4AA675592ABB001200FA71D3 /* DateFormat.swift in Sources */,
 				4AC6CB642AB7351A003D0333 /* UIColorExtension.swift in Sources */,
 				4AC6CB672AB7538E003D0333 /* Quotes.swift in Sources */,
 				4AC6CB522AB72A92003D0333 /* RandomQuoteController.swift in Sources */,
@@ -282,8 +292,10 @@
 				4AC6CB6E2AB76A8A003D0333 /* Category.swift in Sources */,
 				4AC6CB712AB76C4A003D0333 /* NetworkManager.swift in Sources */,
 				4AC6CB5B2AB72BD6003D0333 /* ListQutesController.swift in Sources */,
+				4AA6755C2ABCD9B500FA71D3 /* ExtensionCategoriesController.swift in Sources */,
 				4AC6CB6C2AB76213003D0333 /* QuotesController.swift in Sources */,
 				4AC6CB592AB72BCA003D0333 /* ListQuotesView.swift in Sources */,
+				4AA6755E2ABCD9FA00FA71D3 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
