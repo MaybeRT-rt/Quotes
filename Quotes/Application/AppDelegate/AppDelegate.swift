@@ -12,12 +12,13 @@ import RealmSwift
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         let realmConfig = Realm.Configuration(
             fileURL: try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("myRealm.realm"),
             schemaVersion: 1)
         
-        // Установка конфигурации Realm по умолчанию
         Realm.Configuration.defaultConfiguration = realmConfig
+
         return true
     }
 

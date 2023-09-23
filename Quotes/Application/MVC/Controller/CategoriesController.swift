@@ -26,6 +26,11 @@ class CategoriesController: UIViewController {
         setupTableView()
         loadCategories()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        loadCategories()
+    }
 
     
     private func setupTableView() {

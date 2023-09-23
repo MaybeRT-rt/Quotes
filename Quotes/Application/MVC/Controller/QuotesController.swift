@@ -63,34 +63,81 @@ class QuotesController {
             completion(.failure(error))
         }
     }
-    
+    //    
+    //    func loadCategories(completion: @escaping (Result<[Category], Error>) -> Void) {
+    //        do {
+    //            let realm = try Realm()
+    //            // Загрузите все цитаты из базы данных Realm
+    //            let allQuotes = realm.objects(Quotes.self)
+    //            
+    //            // Создайте множество для хранения уникальных категорий
+    //            var uniqueCategories = Set<String>()
+    //            
+    //            for quote in allQuotes {
+    //                // Если у цитаты есть категория, добавьте ее в множество
+    //                if let category = quote.category {
+    //                    uniqueCategories.insert(category)
+    //                }
+    //            }
+    //            
+    //            // Создайте объекты Category на основе уникальных категорий
+    //            var categoriesToAdd: [Category] = []
+    //            for categoryName in uniqueCategories {
+    //                let newCategory = Category()
+    //                newCategory.name = categoryName
+    //                categoriesToAdd.append(newCategory)
+    //            }
+    //            
+    //            try realm.write {
+    //                // Добавьте только новые категории в базу данных
+    //                realm.add(categoriesToAdd, update: .modified)
+    //            }
+    //            
+    //            // Загрузите сохраненные категории и верните их
+    //            let savedCategories = realm.objects(Category.self)
+    //            completion(.success(Array(savedCategories)))
+    //        } catch {
+    //            completion(.failure(error))
+    //        }
+    //    }
+    //}
     func loadCategories(completion: @escaping (Result<[Category], Error>) -> Void) {
-        NetworkManager.fetchCategories { [weak self] result in
-            switch result {
-            case .success(let categoryNames):
-                DispatchQueue.main.async {
-                    do {
-                        let realm = try Realm()
-                        try realm.write {
-                            for categoryName in categoryNames {
-                                let category = Category()
-                                category.name = categoryName
-                                realm.add(category, update: .modified)
-                            }
-                        }
-                        let savedCategories = realm.objects(Category.self)
-                        completion(.success(Array(savedCategories)))
-                    } catch {
-                        completion(.failure(error))
-                    }
-                }
-            case .failure(let error):
-                DispatchQueue.main.async {
-                    completion(.failure(error))
+        do {
+            let realm = try Realm()
+            // Загрузите все цитаты из базы данных Realm
+            let allQuotes = realm.objects(Quotes.self)
+            
+            // Создайте множество для хранения уникальных категорий
+            var uniqueCategories = Set<String>()
+            
+            for quote in allQuotes {
+                // Если у цитаты есть категория, добавьте ее в множество
+                if let category = quote.category {
+                    uniqueCategories.insert(category)
+                } else {
+                    // Если у цитаты нет категории, добавьте "Uncategorized" в уникальные категории
+                    uniqueCategories.insert("Uncategorized")
                 }
             }
+            
+            // Создайте объекты Category на основе уникальных категорий
+            var categoriesToAdd: [Category] = []
+            for categoryName in uniqueCategories {
+                let newCategory = Category()
+                newCategory.name = categoryName
+                categoriesToAdd.append(newCategory)
+            }
+            
+            try realm.write {
+                // Добавьте только новые категории в базу данных
+                realm.add(categoriesToAdd, update: .modified)
+            }
+            
+            // Загрузите сохраненные категории и верните их
+            let savedCategories = realm.objects(Category.self)
+            completion(.success(Array(savedCategories)))
+        } catch {
+            completion(.failure(error))
         }
     }
 }
-
-

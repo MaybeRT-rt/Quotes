@@ -34,8 +34,7 @@ extension ListQuotesController: UITableViewDelegate, UITableViewDataSource {
             cell.quotesDataLabel.text = ""
         }
         
-        cell.quotesCategotyLabel.text = quote?.category//.category?.capitalized
-        
+        cell.quotesCategotyLabel.text = quote?.category        
         return cell
     }
 }
