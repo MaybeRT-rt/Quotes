@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0B6D582AC06413008BDF6B /* CategoriesQuotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B6D572AC06413008BDF6B /* CategoriesQuotesController.swift */; };
+		4A0B6D5A2AC06423008BDF6B /* CategoriesQuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B6D592AC06423008BDF6B /* CategoriesQuotesView.swift */; };
+		4A0B6D5C2AC08E11008BDF6B /* ExtensionCategoriesQuotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B6D5B2AC08E11008BDF6B /* ExtensionCategoriesQuotesController.swift */; };
+		4A0B6D5E2AC090B2008BDF6B /* CategoriesQuotesOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0B6D5D2AC090B2008BDF6B /* CategoriesQuotesOneCell.swift */; };
 		4AA675542ABAF4CC00FA71D3 /* FooterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA675532ABAF4CC00FA71D3 /* FooterViewCell.swift */; };
 		4AA675572ABAF68F00FA71D3 /* Extension_ListQuotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA675562ABAF68F00FA71D3 /* Extension_ListQuotes.swift */; };
 		4AA675592ABB001200FA71D3 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA675582ABB001200FA71D3 /* DateFormat.swift */; };
@@ -34,6 +38,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A0B6D572AC06413008BDF6B /* CategoriesQuotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesQuotesController.swift; sourceTree = "<group>"; };
+		4A0B6D592AC06423008BDF6B /* CategoriesQuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesQuotesView.swift; sourceTree = "<group>"; };
+		4A0B6D5B2AC08E11008BDF6B /* ExtensionCategoriesQuotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionCategoriesQuotesController.swift; sourceTree = "<group>"; };
+		4A0B6D5D2AC090B2008BDF6B /* CategoriesQuotesOneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesQuotesOneCell.swift; sourceTree = "<group>"; };
 		4AA514222AB9DE3A0067FD61 /* Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AA675532ABAF4CC00FA71D3 /* FooterViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterViewCell.swift; sourceTree = "<group>"; };
 		4AA675562ABAF68F00FA71D3 /* Extension_ListQuotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_ListQuotes.swift; sourceTree = "<group>"; };
@@ -78,6 +86,7 @@
 			children = (
 				4AA675562ABAF68F00FA71D3 /* Extension_ListQuotes.swift */,
 				4AA6755B2ABCD9B500FA71D3 /* ExtensionCategoriesController.swift */,
+				4A0B6D5B2AC08E11008BDF6B /* ExtensionCategoriesQuotesController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -153,6 +162,7 @@
 				4AC6CB532AB72AA4003D0333 /* RandomQuoteView.swift */,
 				4AC6CB582AB72BCA003D0333 /* ListQuotesView.swift */,
 				4AC6CB5E2AB72C0E003D0333 /* CategoriesView.swift */,
+				4A0B6D592AC06423008BDF6B /* CategoriesQuotesView.swift */,
 				4AC6CB772AB908F4003D0333 /* Cell */,
 			);
 			path = View;
@@ -165,6 +175,7 @@
 				4AC6CB512AB72A92003D0333 /* RandomQuoteController.swift */,
 				4AC6CB5A2AB72BD6003D0333 /* ListQutesController.swift */,
 				4AC6CB602AB72C19003D0333 /* CategoriesController.swift */,
+				4A0B6D572AC06413008BDF6B /* CategoriesQuotesController.swift */,
 				4AA675552ABAF66200FA71D3 /* Extensions */,
 			);
 			path = Controller;
@@ -195,6 +206,7 @@
 				4AC6CB782AB9090D003D0333 /* QuotesCell.swift */,
 				4AA675532ABAF4CC00FA71D3 /* FooterViewCell.swift */,
 				4AA6755D2ABCD9FA00FA71D3 /* CategoryCell.swift */,
+				4A0B6D5D2AC090B2008BDF6B /* CategoriesQuotesOneCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -279,17 +291,21 @@
 				4AC6CB342AB7142F003D0333 /* AppDelegate.swift in Sources */,
 				4AC6CB362AB7142F003D0333 /* SceneDelegate.swift in Sources */,
 				4AC6CB612AB72C19003D0333 /* CategoriesController.swift in Sources */,
+				4A0B6D5C2AC08E11008BDF6B /* ExtensionCategoriesQuotesController.swift in Sources */,
 				4AC6CB542AB72AA4003D0333 /* RandomQuoteView.swift in Sources */,
 				4AC6CB482AB714E5003D0333 /* MainTabBarController.swift in Sources */,
 				4AA675572ABAF68F00FA71D3 /* Extension_ListQuotes.swift in Sources */,
 				4AA675542ABAF4CC00FA71D3 /* FooterViewCell.swift in Sources */,
+				4A0B6D5A2AC06423008BDF6B /* CategoriesQuotesView.swift in Sources */,
 				4AC6CB792AB9090D003D0333 /* QuotesCell.swift in Sources */,
 				4AA675592ABB001200FA71D3 /* DateFormat.swift in Sources */,
 				4AC6CB642AB7351A003D0333 /* UIColorExtension.swift in Sources */,
 				4AC6CB672AB7538E003D0333 /* Quotes.swift in Sources */,
 				4AC6CB522AB72A92003D0333 /* RandomQuoteController.swift in Sources */,
 				4AC6CB5F2AB72C0E003D0333 /* CategoriesView.swift in Sources */,
+				4A0B6D582AC06413008BDF6B /* CategoriesQuotesController.swift in Sources */,
 				4AC6CB6E2AB76A8A003D0333 /* Category.swift in Sources */,
+				4A0B6D5E2AC090B2008BDF6B /* CategoriesQuotesOneCell.swift in Sources */,
 				4AC6CB712AB76C4A003D0333 /* NetworkManager.swift in Sources */,
 				4AC6CB5B2AB72BD6003D0333 /* ListQutesController.swift in Sources */,
 				4AA6755C2ABCD9B500FA71D3 /* ExtensionCategoriesController.swift in Sources */,

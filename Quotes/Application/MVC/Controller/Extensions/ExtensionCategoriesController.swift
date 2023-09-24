@@ -22,4 +22,12 @@ extension CategoriesController: UITableViewDelegate, UITableViewDataSource {
         }
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedCategory = categories[indexPath.row]
+        let categoryQuotesVC = CategoriesQuotesController()
+        categoryQuotesVC.selectedCategory = selectedCategory
+        navigationController?.pushViewController(categoryQuotesVC, animated: true)
+        
+    }
 }
