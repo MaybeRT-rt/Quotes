@@ -29,7 +29,7 @@ class CategoryCell: UITableViewCell {
     }
     
     private func configureUI() {
-        backgroundColor = UIColor(named: "Color 1")
+       // backgroundColor = UIColor(named: "Color 1")
         addSubview(nameLabel)
         
         NSLayoutConstraint.activate([
