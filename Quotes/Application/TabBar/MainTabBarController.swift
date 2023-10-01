@@ -18,9 +18,9 @@ class MainTabBarController: UITabBarController {
     
     private func generateTabBar() {
         viewControllers = [
-            generateVC(viewController: RandomController(), title: "Random quotes", image: UIImage(systemName: "quote.bubble.fill")),
-            generateVC(viewController: ListQutesController(), title: "List qutes", image: UIImage(systemName: "list.bullet.clipboard.fill")),
-            generateVC(viewController: CategoriesController(), title: "Categories", image: UIImage(systemName: "folder.fill"))
+            generateVC(viewController: UINavigationController(rootViewController: RandomQuoteController()), title: "Random quotes", image: UIImage(systemName: "quote.bubble.fill")),
+            generateVC(viewController: UINavigationController(rootViewController: ListQuotesController()), title: "List quotes", image: UIImage(systemName: "list.bullet.clipboard.fill")),
+            generateVC(viewController: UINavigationController(rootViewController: CategoriesController()), title: "Categories", image: UIImage(systemName: "folder.fill"))
         ]
     }
     
